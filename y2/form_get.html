@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form get</title>
+</head>
+<body>
+<p>kodune yl 2</p>
+<p>vorm GET meetodil, vt tulemust aadressireal</p>
+
+<form method="get" action="index.html" id ="form1"> <!-- action- kuhu saadetakse vou kust tuuakse andmed-->
+    <br>
+    <input type="text" name = "nimi" placeholder="sisesta oma nimi" value = "xx" size ="30" maxlength = "300">
+    Atribuudiga placeholder saab vormielementidele (millesse kasutaja kirjutada saab) lisada teavitusteksti, atribuudiga value vaikimisi väärtust.
+    <br>
+    <input type="checkbox" name = "sugu" value ="mees" checked> mees
+    <br>
+    <input type="checkbox" name = "sugu" value ="naine" checked> naine
+    <br>
+    <br>
+    <input type="radio" id ="mees2" name = "sugu2" value ="mees" >
+    <label for="mees2">Mees</label> <!-- label on seotud mingi valjaga. kui mehe labeli peale klikata siis tootab klikk -->
+    <br>
+    <input type="radio" id= "naine2" name = "sugu2" value ="naine" >
+    <label for="naine2">Naine</label>
+    <br>
+    <br>
+    <select name="sugu_select">
+        <option value ="m" selected>MEES</option>
+        <option value ="n">NAINE</option>
+    </select>
+    <br>
+    <button type="submit">
+        Saada ara vorm1
+    </button>
+</form>
+</body>
+</html>
