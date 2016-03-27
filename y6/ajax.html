@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#esimene').click(function(){
+                $.get("veeriku.inc",function(data){
+                    $("#sisu").html(data);
+                },"html")
+            });
+
+            $('#teine').click(function(){
+                $.get("annelinn.inc",function(data){
+                    $("#sisu").html(data);
+                },"html")
+            });
+        });
+
+    </script>
+</head>
+<body>
+<button id="esimene">veeriku</button>
+<button id="teine">annelinn</button>
+<div id="sisu">
+    algne sisu saab olema ajax poolt yle kirjutatud
+</div>
+</body>
+</html>
