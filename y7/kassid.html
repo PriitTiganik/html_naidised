@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kassid</title>
+</head>
+<body>
+
+<p class="korduv" style="display:inline-block;
+width:29%;
+border:solid #c0c0c0 2px;
+border-radius:5px;
+padding:10px;
+margin:1%;">
+<b><?php echo $kass['nimi'];?></b> on
+    <?php echo $kass['vanus'];?> aastane.
+    Selle <?php
+    $sugunimi="a";
+
+    Switch ($kass['sugu']){
+    case "n": $sugunimi="kassitydruku";break ;
+    case "m": $sugunimi="kassipoisi";break ;
+
+    default: "sugu_m22ramata";break ;
+    }
+    echo $sugunimi;
+    ?> omanik on
+    <?php echo $kass['omanik'];?>.
+
+</p>
+
+</body>
+</html>
