@@ -1,0 +1,17 @@
+
+<div id="wrap">
+	<h3>Valiku tulemus</h3>
+
+
+	<?php
+    //var_dump($_GET);
+    if(!empty($_POST)){
+        echo'<p>valisid pildi nr '.($_POST["pilt"]+1).'</p>';
+	echo '<img src="../pildid/nameless'.($_POST["pilt"]+1).'.jpg" alt=""/>';
+	}else{
+	echo '<p>Sa ei valinudki yhtegi pilti</p>';
+	}
+
+	?>
+
+</div>

@@ -62,9 +62,14 @@ $(document).ready(function(){
         });
 
     $('.target').click(function(){
+        $side=Math.random()*100;
         $(this).animate(
-            {"top": (Math.random()*500)+"px","right": (Math.random()*500)+"px"},
-            1500
+            {"top": (Math.random()*500)+"px",
+                "right": (Math.random()*500)+"px",
+                "width":"100%*"+$side,
+                "height":"100%*"+$side
+            },
+            500
         );
     });
 
