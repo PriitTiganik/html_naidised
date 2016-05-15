@@ -1,0 +1,15 @@
+
+<?php foreach($puurid as $key => $puur):?>
+    <div>
+        <h1><p>Puur <?php echo $puur["puur"]; ?> </p></h1>
+        <pre>
+        <?php //print_r(puuri_sisu($puur["puur"]));
+         $puurisisu=puuri_sisu($puur["puur"]);?>
+        </pre>
+        <?php foreach($puurisisu as $key => $loom):?>
+            <?php echo $loom["nimi"]; ?>
+            <img src="<?php echo $loom["liik"]; ?>" alt="<?php echo $loom["nimi"]; ?>"/>
+        <?php endforeach; ?>
+    </div>
+
+<?php endforeach; ?>
