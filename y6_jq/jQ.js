@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     $(".teine").first().css("background-color","skyblue");
     console.log($("p").get(3));
-    //$("p").get(3).innerHTML="toimib ka";
+    $("p").get(3).innerHTML="toimib ka";
     $("#esimene").next().next().css("background-color","skyblue");
 
     $("li").each(function(index){
@@ -31,7 +31,8 @@ $(document).ready(function(){
     //    }
     //})
 
-    $("p").first().remove();
+    //saab elemente eemaldada htmlist
+    //$("p").first().remove();
 
     $('.pilt').click(function(){
         //mida teha klikitud paragrahvi korral

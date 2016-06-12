@@ -14,7 +14,7 @@
     height:200px;
     position:relative;
     top:50px;
-    left:50px;
+    left:50%;
 
     /*border:1px solid red;*/
     display:block;
@@ -85,7 +85,7 @@ border:5px solid saddlebrown;
     padding-bottom: 50px;
 }
 .row{
-    clear: both;
+    /*clear: both;*/
     border:1px solid black;
     margin-top:50px;
 }
